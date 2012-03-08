@@ -1,0 +1,39 @@
+# Features #
+
+## Create String Containing Changelist File Paths ##
+
+* need selector for changelists
+* dump to console, useful for other external tasks
+* should be available in menu/toolbar, and as popup item for changelists
+
+
+## Create a Working Set from Changelist ##
+
+* should popup a changelist selector to select changelist
+  * once list(s) selected then popup the working set selector
+* should be available in menu/toolbar, and as popup item for changelists
+
+
+## Add Search of Changelist Files ##
+
+* search of only the files in a specified changelist or lists
+* should be available in search tab and as menu/button
+
+
+## Ability to Shelve/Unshelve Changelist ##
+
+* need to consider where changes stored
+* need to consider comparison "integration" back into codeline
+
+## Export Shelved Changes ##
+
+* ability to export a shelved change set (as a zip file or something)
+
+## Export files in Changelist ##
+
+* Could do by creating working set from changelist and then export working set
+
+
+
+--- this can be done for SVN too!
+I will need to get this working at least for alpha and then start generalizing it so I can write one for svn

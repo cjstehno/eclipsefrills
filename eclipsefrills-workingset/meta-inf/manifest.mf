@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Eclipse Frills Workingset Plug-in
+Bundle-SymbolicName: net.sourceforge.eclipsefrills.workingset;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Localization: plugin
+Bundle-Activator: net.sourceforge.eclipsefrills.workingset.Activator
+Bundle-Vendor: Christopher J. Stehno (cjstehno@users.sourceforge.net)
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.ui.ide,
+ org.eclipse.core.resources,
+ org.eclipse.help
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

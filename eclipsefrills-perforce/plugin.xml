@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            id="net.sourceforge.eclipsefrills.perforce.commands.category"
+            name="Perforce Commands">
+      </category>
+      <command
+            categoryId="net.sourceforge.eclipsefrills.perforce.commands.category"
+            id="net.sourceforge.eclipsefrills.perforce.commands.DumpChangelist"
+            name="Dump Changelist Contents">
+      </command>
+      <command
+            categoryId="net.sourceforge.eclipsefrills.perforce.commands.category"
+            id="net.sourceforge.eclipsefrills.perforce.commands.ShelveChanges"
+            name="Shelve Changes">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="net.sourceforge.eclipsefrills.perforce.handler.DumpChangelistHandler"
+            commandId="net.sourceforge.eclipsefrills.perforce.commands.DumpChangelist">
+      </handler>
+      <handler
+            class="net.sourceforge.eclipsefrills.perforce.handler.ShelveChangesHandler"
+            commandId="net.sourceforge.eclipsefrills.perforce.commands.ShelveChanges">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="net.sourceforge.eclipsefrills.perforce.commands.DumpChangelist"
+            contextId="org.eclipse.ui.contexts.window"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+6">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:net.sourceforge.eclipsefrills.core.menu">
+            <command
+                  commandId="net.sourceforge.eclipsefrills.perforce.commands.DumpChangelist"
+                  id="net.sourceforge.eclipsefrills.perforce.menus.DumpChangelist"
+                  label="Dump Changelist"
+                  mnemonic="S"
+                  tooltip="Dumps the changelist to a string on the console.">
+            </command>            
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="net.sourceforge.eclipsefrills.perforce"
+            name="Perforce Frills">
+      </category>
+      <view
+            category="net.sourceforge.eclipsefrills.perforce"
+            class="net.sourceforge.eclipsefrills.perforce.view.ShelvedChangesView"
+            icon="icons/sample.gif"
+            id="net.sourceforge.eclipsefrills.perforce.view.ShelvedChangesView"
+            name="Shelved Changes">
+      </view>
+   </extension>
+
+</plugin>

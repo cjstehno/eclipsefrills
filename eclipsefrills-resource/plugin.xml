@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.viewActions">
+      <viewContribution
+            id="net.sourceforge.eclipsefrills.resource.viewcontribution"
+            targetID="org.eclipse.search.ui.views.SearchView">
+         <action
+               class="net.sourceforge.eclipsefrills.resource.action.OpenAllResultsAction"
+               icon="icons/openall.gif"
+               id="net.sourceforge.eclipsefrills.resource.openselected"
+               label="%eclipsefrills.resource.action.open.label"
+               menubarPath="additions"
+               toolbarPath="additions"
+               tooltip="%eclipsefrills.resource.action.open.tooltip">
+         </action>
+      </viewContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:eclipsefrills.menu">
+         <command
+               commandId="eclipsefrills.resource.mark.command"
+               icon="icons/applications-development.png"
+               label="%eclipsefrills.resource.mark.label"
+               tooltip="%eclipsefrills.resource.mark.tooltip">
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="net.sourceforge.eclipsefrills.resource.handler.MarkDerivedHandler"
+            description="%eclipsefrills.resource.mark.tooltip"
+            id="eclipsefrills.resource.mark.command"
+            name="%eclipsefrills.resource.mark.label">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.help.toc">
+      <toc
+            file="toc.xml"
+            primary="true">
+      </toc>
+      <toc
+            file="toctasks.xml">
+      </toc>
+   </extension>
+
+</plugin>

@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <title>Eclipse Frills Plug-ins: Installation</title>
+        <link rel="stylesheet" type="text/css" href="rc/css/styles.css" />
+    </head>
+    <body>
+        <div id="header">
+            <div><a href="index.html"><img src="rc/img/title.png" border="0" /></a></div>
+            <div>
+                <a href="index.html" title="Home"><img src="rc/img/start-here-16x16.png" border="0"/></a>
+                <a href="features.html" title="Features"><img src="rc/img/help-browser-16x16.png" border="0"/></a>
+                <a href="install.html" title="Install"><img src="rc/img/document-save-16x16.png" border="0"/></a>
+                <a href="http://sourceforge.net/projects/eclipsefrills" title="Project"><img src="rc/img/applications-system-16x16.png" border="0"/></a>
+                <a href="http://www.stehno.com/taxonomy/term/13" title="Blog"><img src="rc/img/accessories-text-editor-16x16.png" border="0"/></a>
+            </div>            
+        </div>
+        
+        <div id="content">
+
+			<p><img src="rc/img/document-save.png" border="0" align="top" /> <span class="title">Install</span></p>
+			
+			<p>Currently, there are two ways to install the Frills plug-ins, you can use the Eclipse update system to install the latest version of the Frills Feature, or you can 
+            download and install select plug-ins individually.</p>
+			
+			<img src="rc/img/face-monkey.png" align="top"/> <b>Requirements</b>
+			<p>The Eclipse Frills plug-ins are developed and tested on:</p>
+			
+			<ul>
+				<li class="padded">Eclipse 3.5.0, but will probably work on anything 3.4.x and above.</li>
+				<li class="padded">Windows Vista and Ubuntu; however, there is no OS-specific code in these plug-ins so they should work anywhere Eclipse does.</li>
+				<li class="padded">Java 6. Most of the plug-ins <i>should</i> work using Java 5; however, they have not been tested.</li>
+			</ul>
+            
+            <blockquote>I tend to develop these for the version of Java and Eclipse that I am currently working on. Should you find any issues with the version you are running, please file a 
+            <a href="https://sourceforge.net/apps/trac/eclipsefrills/newticket">bug report</a> and I will make sure that everything works for you.</blockquote>
+			
+			<img src="rc/img/system-installer.png" align="top" /> <b>Download and install them individually</b>
+			<p>In order to pick and choose which plug-ins you get, you must download them individually.</p>
+			
+			<ol>
+				<li class="padded">Go to the project download site 
+					<a href="https://sourceforge.net/projects/eclipsefrills/files/">https://sourceforge.net/projects/eclipsefrills/files/</a>
+					and download the desired plug-in.</li>
+				<li class="padded"><img src="rc/img/dialog-warning.png" align="top"/> You will need the "net.sourceforge.eclipsefrills.core" plug-in if you do not already have
+					it installed.</li>
+				<li class="padded">Move the jar files into the <code>plug-ins</code> directory of your Eclipse installation.</li>
+				<li class="padded">Start Eclipse (or restart if you already have it running).</li>
+			</ol>
+			
+			<img src="rc/img/system-software-update.png" align="top" /> <b>Install them all at once using the update site</b>
+			<p>If you want to install all of the plug-ins in one shot, this is the way to go.</p>
+			
+			<ol>
+				<li class="padded">From the Eclipse menu select: Help &gt; Software Updates &gt; Find and Install</li>
+				<li class="padded">Select "Search for new features to install" and click the Next button.</li>
+				<li class="padded">Click the "New Remote Site..." button.</li>
+				<li class="padded">Enter "Eclipse Frills" for the site name, and 
+					"<a href="http://eclipsefrills.sourceforge.net">http://eclipsefrills.sourceforge.net</a>" for the 
+					URL, then click the OK button.</li>
+				<li class="padded">Click the Finish button to start the update.</li>
+				<li class="padded">Select your features and proceed through the installation.</li>
+				<li class="padded">Once the download and installation have finished you will need to restart Eclipse.</li>
+			</ol>
+			
+			<p>You may also want to refer to the Eclipse documentation: 
+			<a href="http://help.eclipse.org/galileo/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-36.htm">Updating features with the update manager</a> 
+			for more information related to installing updates.
+
+        </div>
+        
+        <div id="footer">
+            <p>
+                The Eclipse Frills Plug-ins project is hosted by SourceForge.net<br/>
+                <script type="text/javascript" src="http://www.ohloh.net/p/97591/widgets/project_thin_badge.js"></script> 
+                <a href="http://sourceforge.net/projects/eclipsefrills"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=156762&amp;type=13" border="0" width="120" height="30" alt="Get EclipseFrills at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a>
+            </p>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,32 @@
+body {
+	font-family: Bitstream Vera Sans, Tahoma, Arial, Helvetica;	
+	font-size: 11pt;
+}
+
+blockquote {
+    border: 1px dashed gray;
+    color: gray;
+    padding: 3px;
+}
+
+#footer {
+    margin-top: 10px;
+    border-top: 1px solid gray;
+}
+
+#content .menu-item {
+    margin: 10px;
+}
+
+#content .menu-item a {
+    text-decoration: none;
+}
+
+#header div {
+    display: inline;
+}
+
+a.wiki-link {
+    font-size: 10px;
+    font-style: italic;
+}

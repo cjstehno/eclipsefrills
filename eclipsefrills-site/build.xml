@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="EclipseFrills-site" default="export">
+
+    <target name="export">
+        <zip destfile="eclipsefrills-site.zip" basedir="." includes="**/*.*" excludes="build.xml" />
+    </target>
+</project>

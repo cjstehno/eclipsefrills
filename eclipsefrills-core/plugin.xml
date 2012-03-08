@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=window">
+         <menu
+               id="eclipsefrills.menu"
+               label="%eclipsefrills.core.menu.label"
+               tooltip="%eclipsefrills.core.menu.description">
+         </menu>
+      </menuContribution>
+   </extension>
+
+</plugin>

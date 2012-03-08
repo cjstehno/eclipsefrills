@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Markdown Syntax</title>
+</head>
+<body>
+
+<h1>Markdown Syntax</h1>
+
+<h2>Phrase Emphasis</h2>
+<pre>
+*italic*
+**bold**
+_italic_
+__bold__</pre>
+
+<h2>Links</h2>
+
+<h3>Inline:</h3>
+<pre>An [example](http://url.com/ "Title")</pre>
+
+<h3>Reference-style labels (titles are optional):</h3>
+<pre>An [example][id]. Then, anywhere else in the doc, define the link:
+
+  [id]: http://example.com/  "Title"</pre>
+
+<h2>Images</h2>
+
+<h3>Inline (titles are optional):</h3>
+<pre>![alt text](/path/img.jpg "Title")</pre>
+
+<h3>Reference-style:</h3>
+<pre>![alt text][id]
+
+[id]: /url/to/img.jpg "Title"</pre>
+
+<h2>Headers</h2>
+
+<h3>Setext-style:</h3>
+<pre>
+Header 1
+========
+
+Header 2
+--------</pre>
+
+<h3>atx-style (closing #'s are optional):</h3>
+<pre># Header 1 #
+
+## Header 2 ##
+
+###### Header 6</pre>
+
+<h2>Lists</h2>
+
+<h3>Ordered, without paragraphs:</h3>
+<pre>1.  Foo
+2.  Bar</pre>
+
+<h3>Unordered, with paragraphs:</h3>
+<pre>*   A list item.
+
+    With multiple paragraphs.
+
+*   Bar</pre>
+
+<h3>You can nest them:</h3>
+<pre>*   Abacus
+    * answer
+*   Bubbles
+    1.  bunk
+    2.  bupkis
+        * BELITTLER
+    3. burper
+*   Cunning</pre>
+
+<h2>Blockquotes</h2>
+<pre>
+> Email-style angle brackets
+> are used for blockquotes.
+
+> > And, they can be nested.
+
+> #### Headers in blockquotes
+>
+> * You can quote a list.
+> * Etc.</pre>
+
+<h2>Code Spans</h2>
+<pre>
+`&lt;code&gt;` spans are delimited
+by backticks.
+
+You can include literal backticks
+like `` `this` ``.</pre>
+
+<h2>Preformatted Code Blocks</h2>
+<pre>Indent every line of a code block by at least 4 spaces or 1 tab.
+
+This is a normal paragraph.
+
+    This is a preformatted
+    code block.
+</pre>
+
+<h2>Horizontal Rules</h2>
+<pre>Three or more dashes or asterisks:
+
+---
+
+* * *
+
+- - - -</pre>
+
+<h2>Manual Line Breaks</h2>
+
+<pre>End a line with two or more spaces:
+
+Roses are red,
+Violets are blue.
+</pre>
+
+</body>
+</html>

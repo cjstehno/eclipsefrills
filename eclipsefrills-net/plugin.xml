@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:eclipsefrills.menu">
+         <command
+               commandId="eclipsefrills.net.resolve.command"
+               icon="icons/network-wired.png"
+               label="%eclipsefrills.net.action.resolve.label"
+               tooltip="%eclipsefrills.net.action.resolve.tooltip">
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="net.sourceforge.eclipsefrills.net.handler.ResolveAddressHandler"
+            description="%eclipsefrills.net.action.resolve.tooltip"
+            id="eclipsefrills.net.resolve.command"
+            name="%eclipsefrills.net.action.resolve.label">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.help.toc">
+      <toc
+            file="toc.xml"
+            primary="true">
+      </toc>
+      <toc
+            file="toctasks.xml">
+      </toc>
+   </extension>
+
+</plugin>

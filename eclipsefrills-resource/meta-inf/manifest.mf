@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Eclipse Frills Resource Plug-in
+Bundle-SymbolicName: net.sourceforge.eclipsefrills.resource;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: net.sourceforge.eclipsefrills.resource.Activator
+Bundle-Vendor: Christopher J. Stehno (cjstehno@users.sourceforge.net)
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.eclipse.ui.ide,
+ net.sourceforge.eclipsefrills.core,
+ org.eclipse.help
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

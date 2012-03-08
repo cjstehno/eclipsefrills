@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Eclipse Frills Markdown Plug-in
+Bundle-SymbolicName: net.sourceforge.eclipsefrills.markdown;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: net.sourceforge.eclipsefrills.markdown.Activator
+Bundle-Vendor: Christopher J. Stehno (cjstehno@users.sourceforge.net)
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.ui.editors,
+ org.eclipse.ui.workbench.texteditor,
+ org.eclipse.ui.ide,
+ org.eclipse.jface.text,
+ org.eclipse.core.resources
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .,
+ markdownj-1.0.2b4-0.3.0.jar
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
